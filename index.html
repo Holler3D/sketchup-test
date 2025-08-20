@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>&lt;model-viewer&gt; template</title>
+    <meta charset="utf-8">
+    <meta name="description" content="&lt;model-viewer&gt; template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" href="./styles.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <!-- <model-viewer> HTML element -->
+    <model-viewer src="untitled.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="1" auto-rotate min-camera-orbit="auto 0deg auto" max-camera-orbit="auto 85deg auto">
+      <button class="Hotspot" slot="hotspot-1" data-position="9.369617937450741m 8.772918011856706m -11.976458205412717m" data-normal="-0.2013763150385273m 0.8720850225687189m -0.4459992075697233m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">Roof</div>
+      </button><button class="Hotspot" slot="hotspot-2" data-position="6.114999148811592m 0.30103108286857605m -18.046591509508993m" data-normal="0m -1m 0m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">Lawn</div>
+      </button><button class="Hotspot" slot="hotspot-3" data-position="20.06364546224981m 5.76020883469164m -42.06950590785686m" data-normal="-0.45301737076879356m 0.8858945749072098m 0.09983017545664066m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">Two Bedroom</div>
+      </button>
+      <div class="progress-bar hide" slot="progress-bar">
+          <div class="update-bar"></div>
+      </div>
+      <button slot="ar-button" id="ar-button">
+          View in your space
+      </button>
+      <div id="ar-prompt">
+          <img src="ar_hand_prompt.png">
+      </div>
+    </model-viewer>  
+    <script src="script.js"></script>
+    <!-- Loads <model-viewer> for browsers: -->
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+  </body>
+</html>
